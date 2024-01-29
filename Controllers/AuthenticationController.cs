@@ -11,9 +11,9 @@ namespace FightDocManager.Controllers
     [ApiController]
     public class AuthenticationController : ControllerBase
     {
-        private readonly ILoginManager _loginManager ;
+        private readonly ILoginManager _loginManager;
         public IConfiguration _configuration;
-        public AuthenticationController(IConfiguration configuration,ILoginManager loginManager)
+        public AuthenticationController(IConfiguration configuration, ILoginManager loginManager)
         {
             _configuration = configuration;
             _loginManager = loginManager;
